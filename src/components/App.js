@@ -12,7 +12,7 @@ function App() {
 	const [sortBy, setSortBy] = useState("name")
 
 	const hogsToDisplay = hogs
-	.filter(hog => showGreased ? hogs.greased: true)
+	.filter(hogs => showGreased ? hogs.greased: true)
 	.sort((hog1, hog2) => {
 		if (sortBy === "weight") {
 			return hog1.weight - hog2.weight

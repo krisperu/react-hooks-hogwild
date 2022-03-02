@@ -25,7 +25,10 @@ function HogTile({hog}) {
           <button 
             className="ui button"
             onClick={()=> setIsHidden(true)}
-          >Hide Me
+          >Hide Me {" "}
+            <span role="img" aria-label="snout">
+            🐽
+          </span>
           </button>
       </div>
   )
